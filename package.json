@@ -1,0 +1,19 @@
+{
+    "name": "spa-form",
+    "version": "1.0.0",
+    "description": "Aliaksey's tests with spa",
+    "main": "app.js",
+    "scripts": {
+        "start": "webpack-dev-server --mode development --open",
+        "build": "webpack --mode production"
+    },
+    "author": "Aliaksei Skakun",
+    "license": "ISC",
+    "devDependencies": {
+        "clean-webpack-plugin": "^4.0.0",
+        "html-webpack-plugin": "^5.5.0",
+        "webpack": "^4.41.5",
+        "webpack-cli": "^3.3.10",
+        "webpack-dev-server": "^3.10.1"
+    }
+}
