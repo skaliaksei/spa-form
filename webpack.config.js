@@ -1,5 +1,5 @@
 const path = require('path');
-const HTMLPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -12,8 +12,11 @@ module.exports = {
         port: 3000
     },
     plugins: [
-        new HTMLPlugin({
-            filename: './src/index.html'
+        new HTMLWebpackPlugin({
+            template: './src/index.html',
+            title: 'SPA',
+            filename: 'index.html',
+            inject: 'body'
         }),
         new CleanWebpackPlugin()
     ],
