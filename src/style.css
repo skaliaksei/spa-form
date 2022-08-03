@@ -23,7 +23,7 @@
   */
 
  #sidebar {
-   background-color: #7377e5;
+   background-color: #1e23a5;
    padding: 15px;
  }
 
@@ -46,4 +46,9 @@
    #content {
      margin-left: 180px;
    }
+ }
+
+ /* MY STYLES */
+ .mui--text-body2 {
+    text-transform: uppercase;
  }
