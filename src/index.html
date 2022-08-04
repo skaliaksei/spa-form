@@ -11,7 +11,7 @@
   <body>
     <div id="sidebar">
       <div class="mui--text-white mui--text-display1 mui--align-vertical">SPA Questions
-        <h3>By Aliaksei</h3>
+        <h4>By Aliaksei</h4>
       </div>
 
     </div>
@@ -20,9 +20,20 @@
         <div class="mui-col-sm-10 mui-col-sm-offset-1">
           <br>
           <br>
-          <div class="mui--text-black-54 mui--text-body2">Enter your question</div>
+          <div class="mui--text-black-54 mui--text-body2">Your questions</div>
           <div class="mui-divider"></div>
           <br>
+            <!-- FORM -->
+            <form class="mui-form" id="form">
+                <div class="mui-textfield mui-textfield--float-label">
+                  <input type="text" id="question-input" required minlength="10" maxlength="256">
+                  <label for="question-input">I would like...</label>
+                </div>
+                <!-- BUTTON -->
+                <div>
+                    <button class="mui-btn mui-btn--primary" type="submit" disabled>Send</button>
+                </div>
+              </form>
             <!-- FORM -->
           <br>
           <div class="mui--text-black-54 mui--text-body2">YOUR QUESTIONS</div>
