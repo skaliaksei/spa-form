@@ -1,3 +1,10 @@
+h3 {
+    color: red;
+
+    &:hover {
+      color: white;
+    }
+  }
 /**
  * Body CSS
  */
