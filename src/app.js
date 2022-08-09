@@ -1,3 +1,4 @@
+import {Question} from './question';
 import './style.scss';
 import './index.html';
 import { isValid } from './utils';
@@ -20,14 +21,12 @@ function submitFormHandler(e) {
             date: new Date().toJSON()
         }
         // Async request to server to save question
-        submitBtn.disabled = true;
-        console.log('Question: ', question);
-
-        input.value = '';
-        input.className = '';
-        submitBtn.disabled = false;
+        Question.create(question).then(() => {
+            input.value = '';
+            input.className = '';
+            submitBtn.disabled = false;
+        })
     }
-
 }
 
 
