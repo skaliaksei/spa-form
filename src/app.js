@@ -29,8 +29,4 @@ function submitFormHandler(e) {
     }
 }
 
-
-
-
 console.log('App is working...');
-

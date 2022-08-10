@@ -9,7 +9,20 @@ export class Question {
         })
         .then(response => response.json())
         .then(response => {
-            console.log(response)
+            question.id = response.name;
+            return question
         })
+        .then(addToLS)
     }
+}
+
+function addToLS(question) {
+    const all = getQuestionsFromLS();
+
+    all.push(question);
+    localStorage.setItem('questions', JSON.stringify(all));
+}
+
+function getQuestionsFromLS() {
+    return JSON.parse(localStorage.getItem('questions') || '[]')
 }
